@@ -1,0 +1,29 @@
+{
+  "obras": [
+    {
+      "id": 1,
+      "titulo": "Abaporu",
+      "autor": "Tarsila do Amaral",
+      "data": "1928",
+      "tecnica": "Óleo sobre tela",
+      "dimensoes": "85 cm x 72 cm",
+      "localizacao": "MALBA",
+      "imagem": "imagens/abaporu.png",
+      "link": "detalhes.html",
+      "resumo": "\"Abaporu\", pintado por Tarsila do Amaral em 1928, é uma das obras mais icônicas do modernismo brasileiro. A pintura representa uma figura humana estilizada com membros desproporcionais, refletindo a busca por uma identidade artística nacional."
+    },
+    {
+      "id": 2,
+      "titulo": "Mona Lisa",
+      "autor": "Leonardo Da Vinci",
+      "data": "1503-1506",
+      "tecnica": "Óleo sobre madeira de álamo",
+      "dimensoes": "77 cm x 53 cm",
+      "localizacao": "Museu do Louvre",
+      "imagem": "imagens/monalisa.png",
+      "link": "detalhes.html",
+      "resumo": "A \"Mona Lisa\", de Leonardo da Vinci, é uma das pinturas mais famosas do mundo. Criada no início do século XVI, a obra é conhecida por seu enigmático sorriso e pela técnica revolucionária do sfumato."
+    }
+  ],
+  "favoritos": {}
+}

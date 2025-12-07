@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Entrar • MeuSite</title>
+  <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+
+  <main class="stage" id="stage">
+    
+    <!-- IMAGEM -->
+    <section class="panel image-panel" id="imagePanel"></section>
+
+    <!-- FORMULÁRIOS -->
+    <section class="panel forms-panel" id="formsPanel">
+
+      <!-- LOGIN -->
+      <form id="loginForm" class="card card--active" autocomplete="on" novalidate>
+        <h1 class="brand">MeuSite</h1>
+        <p class="subtitle">Bem-vindo de volta — entre na sua conta</p>
+
+        <label class="field">
+          <input id="loginEmail" type="email" placeholder="E-mail" required>
+        </label>
+
+        <label class="field">
+          <input id="loginPassword" type="password" placeholder="Senha (mín. 6)" minlength="6" required>
+        </label>
+
+        <div class="row">
+          <button class="btn btn--primary" type="submit">Entrar</button>
+          <button class="btn btn--ghost" type="button" id="toRegisterBtn">Criar conta</button>
+        </div>
+
+        <div class="message" id="loginMessage" aria-live="polite"></div>
+      </form>
+
+      <!-- CADASTRO -->
+      <form id="registerForm" class="card register-card" autocomplete="on" novalidate>
+        <h1 class="brand">Criar Conta</h1>
+        <p class="subtitle">Faça seu cadastro rápido</p>
+
+        <label class="field">
+          <input id="regName" type="text" placeholder="Nome completo" minlength="2" required>
+        </label>
+
+        <label class="field">
+          <input id="regEmail" type="email" placeholder="E-mail" required>
+        </label>
+
+        <label class="field">
+          <input id="regPassword" type="password" placeholder="Senha (mín. 6)" minlength="6" required>
+        </label>
+
+        <div class="row">
+          <button class="btn btn--primary" type="submit">Cadastrar</button>
+          <button class="btn btn--ghost" type="button" id="toLoginBtn">Já tenho conta</button>
+        </div>
+
+        <div class="message" id="regMessage" aria-live="polite"></div>
+      </form>
+
+    </section>
+  </main>
+
+  <script src="assets/js/login.js"></script>
+</body>
+</html>

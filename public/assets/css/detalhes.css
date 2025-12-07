@@ -1,0 +1,218 @@
+/* ===================== ESTILO GERAL ===================== */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+}
+
+/* ===================== FLEX CONTAINER ===================== */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===================== CABEÇALHO ===================== */
+.cabecalho {
+  background: linear-gradient(135deg, #333, #333);
+  color: white;
+  text-align: center;
+  padding: 40px 10px;
+  border-bottom: 5px solid #333;
+}
+
+.cabecalho h1 { font-size: 2rem; font-weight: 700; }
+.cabecalho p { font-size: 1rem; margin-top: 8px; color: #cfe3ff; }
+
+/* ===================== BOTÃO VOLTAR ===================== */
+.btn-voltar {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #084298;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* ===================== SEÇÃO DAS OBRAS ===================== */
+.obra {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.obra h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* ===================== IMAGENS ===================== */
+.imagem-container { text-align: center; margin-bottom: 20px; }
+.imagem-obra {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.imagem-obra:hover { transform: scale(1.03); }
+
+/* ===================== DESCRIÇÃO ===================== */
+.descricao { text-align: justify; margin-bottom: 15px; line-height: 1.6; font-size: 1.05rem; }
+
+/* ===================== LISTA DE DETALHES ===================== */
+.detalhes {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.detalhes li {
+  background-color: #eef3f8;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* ===================== DIVISOR ===================== */
+.divisor { margin: 50px 0; border: none; border-top: 2px solid #ccc; }
+
+/* ===================== BOTÕES DAS OBRAS ===================== */
+.btn-obra {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+.btn-obra:hover {
+  background-color: #084298;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* ===================== FÓRUM ===================== */
+#forum { margin-top: 50px; }
+.forum-form { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+.forum-form input, .forum-form textarea {
+  padding: 10px; border-radius: 5px; border: 1px solid #ccc; width: 100%; max-width: 400px;
+}
+.forum-form button {
+  background-color: #0d6efd; color: white; border: none; border-radius: 5px;
+  padding: 10px 15px; cursor: pointer; transition: 0.3s;
+}
+.forum-form button:hover { background-color: #084298; }
+#mensagens { list-style: none; padding: 0; }
+.mensagem {
+  background-color: #f0f0f0; padding: 10px; margin-bottom: 8px;
+  border-radius: 5px; max-width: 400px; position: relative;
+}
+.mensagem button {
+  position: absolute; top: 5px; right: 5px; background: none; border: none; cursor: pointer; color: #0d6efd;
+  font-size: 0.9rem; margin-left: 5px;
+}
+.mensagem button:hover { text-decoration: underline; }
+
+/* ===================== RODAPÉ ===================== */
+.rodape-detalhes {
+  background: linear-gradient(135deg, #333);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: auto;
+  font-size: 0.95rem;
+  border-top: 4px solid #333;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
+}
+
+/* ===================== RESPONSIVIDADE ===================== */
+@media (max-width: 768px) {
+  .cabecalho h1 { font-size: 1.6rem; }
+  .descricao { font-size: 0.95rem; }
+  .obra { padding: 18px; }
+  .btn-voltar { width: 100%; }
+}
+@media (min-width: 1200px) {
+  .obra { max-width: 900px; margin: 0 auto 50px; }
+}
+/* ===================== ESTILO DO MAPA ===================== */
+.mapa-container {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+.marcador-obra {
+    font-size: 20px;
+    background: transparent;
+    border: none;
+}
+
+.popup-obra {
+    min-width: 200px;
+}
+
+.popup-obra h6 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.popup-obra p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.btn-ver-detalhes {
+    margin-top: 8px;
+    width: 100%;
+}
+
+/* Animação de destaque */
+@keyframes destaque {
+    0% { background-color: transparent; }
+    50% { background-color: rgba(255, 255, 0, 0.2); }
+    100% { background-color: transparent; }
+}
+
+.obra {
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.btn-localizar {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.botoes-mensagem {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.botoes-mensagem button {
+    margin-left: 5px;
+    padding: 2px 8px;
+    font-size: 12px;
+}
